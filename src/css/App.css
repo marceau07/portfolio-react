@@ -206,7 +206,7 @@ body {
 
 /* Scroll to top style */
 .scrollToTop {
-	@apply bg-indigo-600;
+	@apply bg-cyan-700;
 	@apply text-white;
 	position: fixed;
 	width: 100%;
@@ -222,6 +222,10 @@ body {
 
 .scrollToTop:hover {
 	opacity: 1;
+}
+
+.underline {
+	text-decoration: underline;
 }
 
 @keyframes fadeIn {

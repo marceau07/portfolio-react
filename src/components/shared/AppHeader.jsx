@@ -3,8 +3,8 @@ import { FiMenu, FiMoon, FiSun, FiX } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 import HireMeModal from '../HireMeModal';
-import logoLight from '../../images/logo-light.svg';
-import logoDark from '../../images/logo-dark.svg';
+import logoLight from '../../images/logo_marceau_light.png';
+import logoDark from '../../images/logo_marceau_dark.png';
 import { motion } from 'framer-motion';
 import Button from '../reusable/Button';
 
@@ -51,13 +51,13 @@ const AppHeader = () => {
 								<img
 									src={logoDark}
 									className="w-36"
-									alt="Dark Logo"
+									alt="Logo sombre"
 								/>
 							) : (
 								<img
 									src={logoLight}
 									className="w-36"
-									alt="Dark Logo"
+									alt="Logo clair"
 								/>
 							)}
 						</Link>
@@ -110,16 +110,16 @@ const AppHeader = () => {
 					<Link
 						to="/projects"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
-						aria-label="Projects"
+						aria-label="Projets"
 					>
-						Projects
+						Projets
 					</Link>
 					<Link
 						to="/about"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
-						aria-label="About Me"
+						aria-label="A propos de moi"
 					>
-						About Me
+						A propos de moi
 					</Link>
 					<Link
 						to="/contact"
@@ -131,10 +131,10 @@ const AppHeader = () => {
 					<div className="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
 						<span
 							onClick={showHireMeModal}
-							className="font-general-medium sm:hidden block text-left text-md bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-sm px-4 py-2 mt-2 duration-300 w-24"
-							aria-label="Hire Me Button"
+							className="font-general-medium sm:hidden block text-left text-md bg-cyan-600 hover:bg-cyan-700 text-white shadow-sm rounded-sm px-4 py-2 mt-2 duration-300 w-24"
+							aria-label="Recrutez-moi"
 						>
-							<Button title="Hire Me" />
+							<Button title="Recrutez-moi" />
 						</span>
 					</div>
 				</div>
@@ -144,16 +144,16 @@ const AppHeader = () => {
 					<Link
 						to="/projects"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
-						aria-label="Projects"
+						aria-label="Projets"
 					>
-						Projects
+						Projets
 					</Link>
 					<Link
 						to="/about"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
-						aria-label="About Me"
+						aria-label="A propos de moi"
 					>
-						About Me
+						A propos de moi
 					</Link>
 					<Link
 						to="/contact"
@@ -169,10 +169,10 @@ const AppHeader = () => {
 					<div className="hidden md:flex">
 						<span
 							onClick={showHireMeModal}
-							className="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
+							className="text-md font-general-medium bg-cyan-600 hover:bg-cyan-700 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
 							aria-label="Hire Me Button"
 						>
-							<Button title="Hire Me" />
+							<Button title="Recrutez-moi !" />
 						</span>
 					</div>
 
